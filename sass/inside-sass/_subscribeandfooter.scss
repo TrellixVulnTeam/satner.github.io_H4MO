@@ -1,0 +1,86 @@
+#subscription{
+    margin-top: $margin-gapping-top;
+    padding: 0.0rem 0.0rem !important;
+    div{
+        text-align: center;
+        padding: 10.0rem 0.0rem;
+    }
+    h1{
+        margin-bottom: 2%;
+        text-align: center;
+        color: $whitecolor;
+        font-size: $h1-font-size;
+        font-weight: $h1-font-weight;
+    }
+    p{
+        font-size: $parasize;
+        color: $whitecolor;
+        margin-bottom: 5%;
+    }
+    input{ 
+        padding-right: 15rem !important;
+        background: transparent;
+        border: 1.0px solid $whitecolor;
+        border-radius: 2px;
+        padding: .7rem 1.0rem;
+        font-size: 1.1rem;
+        color: $whitecolor; 
+        border-radius: 5px;
+        @media (min-width: 100px) and (max-width: 340px){
+            &{padding-right: 6.0rem !important;}
+        }
+        @media (min-width: 340px) and (max-width: 400px){
+            &{padding-right: 9.0rem !important}
+        }
+        @media (min-width: 400px) and (max-width: 500px){
+            &{padding-right: 11.0rem !important}
+        }
+    }
+    .btn-primary{
+            background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(132,0,255,1) 100%, rgba(0,212,255,1) 100%);
+            border: 1px solid $blackcolor;
+            text-transform: $text-transform-uppercase;
+            padding: .8rem 2.5rem;
+            border-radius: 5px;
+            font-size: $parasize;
+            position: relative;
+            color: $whitecolor;
+            font-weight: 500;
+            left: 2%;
+            &:hover{
+                color: $blackcolor;
+                background: transparent;
+            }
+            @media (min-width: 768px) and (max-width: 1440px){
+                &{left: 2% !important;}
+            }
+            @media (min-width: 100px) and (max-width: 767px){
+            &{margin-top: 5%;}
+            }
+        }
+}
+//footer
+#footer{
+    text-align: center;
+    margin-top: $margin-gapping-top;
+    margin-bottom: 7%;
+    .content{
+        i{
+            width: 60px;
+            padding-top: 1%;
+            transition: 0.5s;
+            font-size: 1.2rem;
+            color: #ababad;
+            cursor: pointer !important;
+            &:hover{
+                color: #5456E0 !important;
+            }
+        }
+        h5{
+            font-size: $parasize;
+            padding-top: 1.0rem;
+            color: #ababad;
+        }
+        span{color: #5456E0; font-size: 25px; font-weight: 500;}
+    }
+} 

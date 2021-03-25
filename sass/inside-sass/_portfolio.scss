@@ -1,0 +1,55 @@
+#portfolio{
+    margin-top: $margin-gapping-top;
+    padding: 1.0rem 0.0rem;
+    header{
+    padding: 1.0rem 0.0rem;
+    background: $main-bg-color; 
+    }
+        h1{
+        font-size: $h1-font-size;
+        font-weight: $h1-font-weight;
+        color: $blackcolor;
+        text-transform: $text-transform-uppercase;
+        text-align: center !important;
+    }
+    .container{
+        margin-top: 5rem;
+        h5{
+            text-transform: $text-transform-uppercase;
+            margin-top: 1.5rem !important;
+        }
+        p{
+            font-weight: 400;
+            color: $graycolor;
+            font-size: $parasize;
+        }
+        img{
+            width: 100% !important;
+            transition: 0.5s;
+            cursor: crosshair;
+            &:hover{transform: scale(1.1);}
+        }
+        .portofolio-img-5{
+            margin-top: 5.0rem;
+        }
+        .portofolio-img-7{
+            margin-top: -3.0rem;
+        }
+        .portofolio-img-8{
+            margin-top: 2.0rem; 
+        }
+        .portofolio-img-9{
+            margin-top: 6.0rem;
+        }
+        @media(min-width: 250px) and (max-width: 768px){
+            & .portofolio-img-5{margin-top: 0.0rem !important;}
+            & .portofolio-img-7{margin-top: 0.0rem !important;}
+            & .portofolio-img-8{margin-top: 0.0rem !important;}
+            & .portofolio-img-9{margin-top: 0.0rem !important;}
+        }
+        @media(max-width: 998px) and (min-width: 768px){
+            & .portofolio-img-9{display: none; visibility: hidden;}
+            & .portofolio-img-9-caption{display: none !important; visibility: hidden !important;}
+        }
+    }
+}

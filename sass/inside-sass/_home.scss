@@ -1,0 +1,124 @@
+nav{
+    padding: 1.7rem 14.0rem !important;
+    ul{
+      li{
+        text-transform: uppercase;
+        padding: 0.0 .9rem;
+        font-weight: 500;
+        font-size: $parasize;
+        .nav-link{
+            color: $blackcolor;
+            transition: all .5s;
+            &:hover{
+                color: $whitecolor;
+                border-top-right-radius: 1.0rem;
+                border-bottom-left-radius: 1.0rem;
+                background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(132,0,255,1) 100%, rgba(0,212,255,1) 100%);
+            }    
+        }
+      }  
+    }
+    @media (min-width: 995px) and (max-width: 1400px){
+        &{padding: 1.7rem 1.0rem !important;}
+    }
+    @media (min-width: 100px) and (max-width: 768px) {
+        &{padding: 1.7rem 1.0rem !important;background: #eaeaea !important; text-align: center !important;}
+        li{padding: 0.0rem 0.0rem !important;}
+        .nav-link{
+            &:hover{border-top-right-radius: 0.0rem !important;
+                border-bottom-left-radius: 0.0rem !important;}
+        }
+    }
+}
+/*==============================
+navbar-after-effect===========*/
+.bg-none.scrolled{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5), 0 0 40px rgba(0,0,0,0.0) inset;
+    padding: 0.5rem 14.0rem !important;
+    transition: all .5s !important;
+    background: #fff !important;
+}
+@media(max-width: 1028px) {
+    .bg-none.scrolled{padding: 0.5rem 1.0rem !important;}
+}
+/*===================================
+navbar-after-effect-end===========*/
+#homebanner{
+    .container{
+        .col-lg-6{
+            padding-top: 5.0rem !important;
+        }
+        h3{
+            text-transform: uppercase;
+            padding-top: 10.0rem;
+            color: $blackcolor;
+            font-size: 2.4rem;
+        }
+        hr{
+            border: 2.0px solid $blackcolor;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 3.872rem;
+            color: $blackcolor;
+        }
+        p{
+            text-transform: uppercase;
+            color: $blackcolor;
+            font-weight: 500;
+            font-size: 24px;
+            margin-bottom: 1.5rem;  
+        }
+        .btn-primary{
+            background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(132,0,255,1) 100%, rgba(0,212,255,1) 100%);
+            border: 1px solid $blackcolor;
+            text-transform: uppercase;
+            padding: .8rem 2.5rem;
+            border-radius: 2.0rem;
+            color: $whitecolor;
+            font-weight: 500;
+            font-size: $parasize;
+            &:hover{
+                color: $blackcolor;
+                background: transparent;
+            }
+        }
+        .btn-success{
+            background: transparent;
+            border: 1px solid $blackcolor;
+            text-transform: uppercase;
+            padding: .8rem 2.5rem;
+            border-radius: 2.0rem;
+            margin-left: .8rem;
+            color: $blackcolor;
+            font-weight: 500;
+            font-size: $parasize;
+            &:hover{
+                color: $whitecolor;
+                background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(132,0,255,1) 100%, rgba(0,212,255,1) 100%);
+            }
+        }
+    }
+    @media(max-width: 790px){
+        
+    }
+    @media(max-width: 1366px){
+        & img{
+            width: 110%;
+            position: relative;
+            top: 15%;
+        }
+    }
+    @media (max-width: 780px) {
+        & .container .col-lg-6{
+            padding-top: 0.0rem !important;
+        }
+        & img{
+            visibility: hidden !important;
+            display: none !important;
+        }
+    }
+}
+// nav-and-banner-end
+/////////////////////
+

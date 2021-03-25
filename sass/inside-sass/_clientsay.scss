@@ -1,0 +1,55 @@
+#clientsay{
+    margin-top: $margin-gapping-top;
+    header{
+    background: $main-bg-color; 
+    padding: 1.0rem 0.0rem;
+    }   
+    h1{
+        text-align: $text-align-center; 
+        font-weight: $h1-font-weight;
+        font-size: $h1-font-size;
+    }
+    p{
+        font-weight: 400;
+        color: $graycolor;
+        font-size: $parasize;
+        padding: 0.0rem 30.0rem;
+        line-height: 26px !important;
+        text-align: $text-align-center;
+    @media (min-width: 250px) and (max-width: 1440px) {
+        & {padding: 0.0rem 1.0rem;}
+    }
+    }
+}
+// carousel
+#testimonials{
+    color: #fff;
+    text-align: center;
+    padding-top: 2.0rem;
+    background-color: $whitecolor;
+    .testimonials-p{
+    color: $graycolor;
+    font-size: $parasize;
+    line-height: 1.5;
+    padding: 0.0rem 30.0rem;
+    @media (min-width: 250px) and (max-width: 1440px) {
+        &{padding: 0.0rem 1.0rem;}
+    }
+    }
+    img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+    @media (min-width: 250px) and (max-width: 768px) {
+        width: 30%;
+    }
+    @media (min-width: 768px) and (max-width: 1440px) {
+        width: 20%;
+
+    }
+    }
+    em{
+        color: $blackcolor;
+        font-weight: 700;
+    }
+}
